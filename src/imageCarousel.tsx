@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import Slider from "react-slick";
-import axios from "axios";
 import clsx from "clsx";
 
 // TODO: Clean up this mess
