@@ -1,6 +1,6 @@
 import "./index.css";
 
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 import About from "./routes/about.tsx";
 import Contact from "./routes/contact.tsx";
@@ -11,7 +11,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Team from "./routes/team/team.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: "/", element: <Home />, errorElement: <ErrorPage /> },
   { path: "/about", element: <About /> },
   { path: "/events", element: <Events /> },
